@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD-131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Mateo Zambrano</title>
+    <meta name="description" content="Home Page of Mateo Zambrano Delgado WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Mateo Zambrano Delgado">
+    <link rel="stylesheet" href="styles/base.css">
+
 </head>
+
 <body>
-    <h1>Mateo Zambrano - WWD 131</h1>
-    <h2>Hola mundo?</h2>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Mateo Zambrano</h1>
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href=" https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/28?lang=eng&id=p2#p2">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2 class="up">About Me</h2>
+            <nav class="me">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi debitis similique error consectetur,
+                    voluptates, dolore facilis magni exercitationem consequuntur voluptatem temporibus obcaecati enim
+                    fugiat, nesciunt sapiente sequi accusamus sunt cupiditate? Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Ratione eum neque nulla laudantium.
+                </p>
+                <img class="perfil" src="images/mateo.jpg" alt="profile image">
+            </nav>
+            <h2 class="country-h2">Manta, Ecuador</h2>
+            <nav class="country-nav">
+                <img class="flag" src="images/flag.jpg" alt="Ecuador flag">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eos earum error repudiandae,
+                    nostrum eaque nisi assumenda aspernatur, quia autem adipisci quidem in voluptatum officia
+                    distinctio, omnis voluptatem. Iure, in! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Corrupti deleniti obcaecati reprehenderit!</p>
+            </nav>
+        </section>
+        <section class="card">
+            <h2 class="up">Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://devresourc.es/">Dev Resources</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+                <li><a href="https://developer.mozilla.org/">JS Resources</a></li>
+                <li><a href="https://fonts.google.com/">Fonts</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Mateo Zambrano, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
+
 </html>
