@@ -22,6 +22,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow: hidden;
     align-items: center;
     background-color: var(--color4);
 }
@@ -34,6 +35,8 @@ header h1 {
     margin: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
+    white-space: nowrap;
+    background-color: var(--color4);
 } 
 
 header nav {
@@ -41,7 +44,7 @@ header nav {
     position: absolute;
     top: 9px;
     right: 0;
-    background-color: var(--color3);
+    background-color: var(--color4);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
