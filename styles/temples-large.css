@@ -6,6 +6,10 @@
         background-color: #3f4e6e;
     }
 
+    header button {
+        visibility: hidden;
+    }
+
     header nav {
         display: flex;
         flex-direction: row;
