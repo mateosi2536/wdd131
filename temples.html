@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album</title>
+    <meta name="description" content="Temples Page of Mateo Zambrano Delgado WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Mateo Zambrano Delgado">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Temples Album</h1>
+        <button class="open" id="open"><i class="bi bi-list"></i></button>
+        <nav id="menu">
+            <button class="close" id="close"><i class="bi bi-x"></i></button>
+            <a href="">Home</a>
+            <a href="">Old</a>
+            <a href="">New</a>
+            <a href="">Lerge</a>
+            <a href="">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <nav>
+            <figure>
+                <img src="images/China Hong Kong.jpg" alt="China Hong Hong Temple">
+                <figcaption>China Hong Hong Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Washington.jpg" alt="Washington DC Temple">
+                <figcaption>Washington DC Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/San Diego California2.jpg" alt="San Diego California Temples">
+                <figcaption>San Diego California Temples</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Roma.jpg" alt="Roma Temple">
+                <figcaption>Roma Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Peru Lima.jpg" alt="Peru Lima Temple">
+                <figcaption>Peru Lima Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ecuador Quito.jpg" alt="Ecuador Quito Temple">
+                <figcaption>Ecuador Quito Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Ecuador Guayaquil.jpg" alt="Ecuador Guayaquil Temple">
+                <figcaption>Ecuador Guayaquil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Colombia Bogota.jpg" alt="Colombia Bogota Temple">
+                <figcaption>Colombia Bogota Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Colombia Barranquilla.jpg" alt="Colombia Barranquilla Temple">
+                <figcaption>Colombia Barranquilla Temple</figcaption>
+            </figure>
+        </nav>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Mateo Zambrano, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/temples.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@media screen and (min-width: 740px) {
+    header nav {
+        visibility: visible;
+        position: static;
+        width: 70%;
+        background-color: #3f4e6e;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
+}
