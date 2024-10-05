@@ -7,5 +7,5 @@ const copyrightParagraph = document.getElementById("currentyear");
 const lastModifiedParagraph = document.getElementById("lastModified");
 
 // Set the copyright year text
-    copyrightParagraph.textContent = `${new Date().getFullYear()}`;
-    lastModifiedParagraph.textContent = `Last Modification: ${lastModified}`;
+copyrightParagraph.textContent = `${new Date().getFullYear()}`;
+lastModifiedParagraph.textContent = `Last Modification: ${lastModified}`;

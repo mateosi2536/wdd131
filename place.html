@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manta Ecuador</title>
+    <meta name="description" content="Place Page by Mateo Zambrano Delgado WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Mateo Zambrano Delgado">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Manta Ecuador</h1>
+    </header>
+    <main>
+        <img class="main-img" alt="Manta Ecuador image"
+            src="images/manta-740.webp"
+            srcset="
+            images/manta-740.webp 740w,
+            images/manta.webp 1200w"
+            sizes="(min-width: 740px) 100vw, 100vw ">
+        <article class="article1">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> 60.39 km²</p>
+            <p><strong>Population:</strong> 258 697</p>
+            <p><strong>Languages:</strong> Spanish</p>
+            <p><strong>Currency:</strong> Portoviejo Jaramijo</p>
+            <p><strong>Time Zone:</strong> UTC-5</p>
+            <p><strong>Calling Code:</strong> +593</p>
+            <p><strong>Internet TLD:</strong> .ec</p>
+        </article>
+        <article class="article2">
+            <h2>Weather</h2>
+            <p class="pointSeudo"><strong>Temperature:</strong> 28°C</p>
+            <p><strong>Conditions:</strong> Partly Cloudly</p>
+            <p><strong>Wind:</strong> 18Km/h</p>
+            <p id="label"><strong>Wind Chill:</strong> N/A</p>
+        </article>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Mateo Zambrano, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/place.js"></script>
+</body>
+
+</html>
