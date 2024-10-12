@@ -1,0 +1,138 @@
+:root {
+    --color1: #9faedf;
+    --color2: #060606;
+    --color3: #1c344a;
+    --color4: #3f4e6e;
+    --color5: #707eb0;
+
+    --font1: "Poppins", system-ui;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font1);
+}
+
+/*               header                */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    background-color: var(--color4);
+}
+
+header h1 {
+    width: 300px;
+    padding-left: 20px;
+    font-weight: 100;
+    color: white;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    background-color: var(--color4);
+} 
+
+header nav {
+    visibility: hidden;
+    position: absolute;
+    top: 9px;
+    right: 0;
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 60%;
+    align-items: end;
+    padding: 20px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+}
+
+a:hover {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+header .open,
+header .close {
+    background-color: var(--color4);
+    border: none;
+    float: right;
+    margin-right: 50px;
+    font-size: 40px;
+    color: white;
+}
+
+header .close {
+    background-color: var(--color3);
+    margin-right: 30px;
+}
+
+/*              main               */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main nav {
+    border: 2px solid black;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+main img {
+    width: 300px;
+    height: auto;
+    margin: 0;
+}
+
+.templeCard {
+    max-width: 300px;
+}
+
+main p {
+    margin: 0px;
+}
+
+/*            footer              */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color3);
+    color: white;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+

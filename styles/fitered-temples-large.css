@@ -1,0 +1,17 @@
+@media screen and (min-width: 740px) {
+    header nav {
+        visibility: visible;
+        position: static;
+        width: 70%;
+        background-color: #3f4e6e;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+    }
+
+    header button {
+        display: none;
+        visibility: hidden;
+    }
+}
