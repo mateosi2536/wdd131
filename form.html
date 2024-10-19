@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Form - Mateo Zambrano</title>
+    <meta name="description" content="Form page of product, Mateo Zambrano Delgado WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Mateo Zambrano Delgado">
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="form" action="review.html" method="get">
+
+            <div class="product-name">
+                <label for="product-name">Product Name:</label>
+                <select class="select" name="product-name" id="product-name" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </div>
+
+            <div class="rating">
+                <label class="full-row">Overall Rating:</label>
+                <input required type="radio" id="star5" name="rating" value="5">
+                <label for="star5">&star;&star;&star;&star;&star;</label>
+
+                <input required type="radio" id="star4" name="rating" value="4">
+                <label for="star4">&star;&star;&star;&star;</label>
+
+                <input required type="radio" id="star3" name="rating" value="3">
+                <label for="star3">&star;&star;&star;</label>
+
+                <input required type="radio" id="star2" name="rating" value="2">
+                <label for="star2">&star;&star;</label>
+
+                <input required type="radio" id="star1" name="rating" value="1">
+                <label for="star1">&star;</label>
+            </div>
+
+            <div class="date">
+                <label for="date">Date of Installation:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="checkboxes">
+                <label class="full-row">which features did you find useful in the product?</label>
+                <input type="checkbox" id="durability" value="durability" name="useful">
+                <label for="durability">Durability</label>
+
+                <input type="checkbox" id="ease-of-use" value="ease-of-use" name="useful">
+                <label for="ease-of-use">Ease of Use</label>
+
+                <input type="checkbox" id="performance" value="performance" name="useful">
+                <label for="performance">Performance</label>
+
+                <input type="checkbox" id="design" value="design" name="useful">
+                <label for="design">Design</label>
+            </div>
+
+            <div class="review">
+                <label for="review">Review:</label>
+                <textarea name="review" id="review"></textarea>
+            </div>
+
+            <div class="userName">
+                <label for="userName">User Name:</label>
+                <input type="text" id="userName" name="userName">
+            </div>
+
+            <input class="bt" type="submit" value="Send">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Mateo Zambrano, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
