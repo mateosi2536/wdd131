@@ -1,0 +1,24 @@
+:root {
+    --color1: #94acb4;
+    --color2:#187878;
+    --color3:#079992;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: var(--color1);
+}
+h1, h2 {
+    color: var(--color2);
+}
+p {
+    color: var(--color3);
+}
+section {
+    margin: 20px 0;
+}
+.wireframe img {
+    max-width: 100%;
+    height: auto;
+}
